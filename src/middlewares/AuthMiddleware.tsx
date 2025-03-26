@@ -7,13 +7,14 @@ type Props = {
 }
 
 export const AuthMiddleware = ({ children }: Props) => { 
-    const navigate = useNavigate();
 
     const {isLogged} = useAuth();
 
-    useEffect(() =>{
-        if (!isLogged) navigate('/signin')
-    }, [])
+    if (!isLogged) {
+        return(
+            <Navigate to={'signin'} replace />
+        )
+    }
 
     return (
         <>
