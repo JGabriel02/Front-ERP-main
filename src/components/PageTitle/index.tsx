@@ -28,6 +28,8 @@ const PageTitle: FC<PageTitleProps> = ({
         </Typography>
         <Typography variant="subtitle2">{subHeading}</Typography>
       </Grid>
+
+      {docs != '' &&
       <Grid item>
         <Button
           href={docs}
@@ -40,6 +42,7 @@ const PageTitle: FC<PageTitleProps> = ({
           {heading} Documentation
         </Button>
       </Grid>
+}
     </Grid>
   );
 };
