@@ -10,7 +10,7 @@ export const useApi = async <TypeDataResponse>(
     data?: object,
     withAuth: boolean = true
 ) => {
-    const BASE_URL = 'https://erp-backend-django-main.onrender.com/api/v1';
+    const BASE_URL = 'https://erp-backend-django-main.onrender.com';
     const access_token = handleGetAccessToken();
 
     const headers: Record<string, string> = {
