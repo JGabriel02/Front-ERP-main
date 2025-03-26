@@ -19,19 +19,19 @@ const Loader = (Component) => (props) =>
 const SignIn = Loader(lazy(() => import('src/content/pages/Auth/Signin')));
 
 // Groups
- const Groups = Loader(lazy(() => import('src/content/pages/Groups/Groups')));
+  const Groups = Loader(lazy(() => import('src/content/pages/Groups/Groups')));
   const AddGroup = Loader(lazy(() => import('src/content/pages/Groups/Add')));
- const EditGroup = Loader(lazy(() => import('src/content/pages/Groups/Edit')));
+  const EditGroup = Loader(lazy(() => import('src/content/pages/Groups/Edit')));
 
 // Employees
   const Employees = Loader(lazy(() => import('src/content/pages/Employees/Employees')));
- const AddEmployee = Loader(lazy(() => import('src/content/pages/Employees/Add')));
- const EditEmployee = Loader(lazy(() => import('src/content/pages/Employees/Edit')));
+  const AddEmployee = Loader(lazy(() => import('src/content/pages/Employees/Add')));
+  const EditEmployee = Loader(lazy(() => import('src/content/pages/Employees/Edit')));
 
 // Tasks
-//const Tasks = Loader(lazy(() => import('src/content/pages/Tasks/Tasks')));
-//const AddTask = Loader(lazy(() => import('src/content/pages/Tasks/Add')));
-//const EditTask = Loader(lazy(() => import('src/content/pages/Tasks/Edit')));
+  const Tasks = Loader(lazy(() => import('src/content/pages/Tasks/Tasks')));
+  const AddTask = Loader(lazy(() => import('src/content/pages/Tasks/Add')));
+  const EditTask = Loader(lazy(() => import('src/content/pages/Tasks/Edit')));
 
 // Status
 //const Status404 = Loader(lazy(() => import('src/content/pages/Status/Status404')));
@@ -39,7 +39,7 @@ const Overview = Loader(lazy(() => import('src/content/overview')));
 
 // Dashboards
 
-const Tasks = Loader(lazy(() => import('src/content/dashboards/Tasks')));
+//const Tasks = Loader(lazy(() => import('src/content/dashboards/Tasks')));
 
 // Applications
 
@@ -125,6 +125,27 @@ const routes: RouteObject[] = [
             path: 'groups/edit/:id',
             element: <EditGroup />
           }
+
+        ]
+        
+      },
+
+      {
+        path: '',
+        element:  <SidebarLayout />,
+        children: [
+          {
+            path: 'tasks',
+            element: <Tasks />
+          },
+          {
+            path: 'tasks-add',
+            element: <AddTask />
+          },
+          {
+            path: 'tasks/edit/:id',
+            element: <EditTask />
+          },
 
         ]
         
