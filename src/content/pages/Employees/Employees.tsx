@@ -34,7 +34,7 @@ const Employees = () => {
             <PageTitleWrapper>
                 <PageTitle
                     heading="Funcionários"
-                    subHeading="Consulte os funcionários da empresa e execute ações em cada funcionário"
+                    subHeading="Consulte funcionários da empresa e execute ações em cada funcionário"
                 />
             </PageTitleWrapper>
 
