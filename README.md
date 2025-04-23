@@ -1,30 +1,39 @@
 
 # 💻📱 Sistema de Gestão Empresarial (ERP)
-Frontend do sistema ERP desenvolvido com ReactJS + TypeScript, consumindo a API Django. Oferece interfaces para:
+Este é o frontend de um sistema ERP desenvolvido com ReactJS + TypeScript, que consome dados de uma API construída com Django. A aplicação oferece uma interface moderna e responsiva para gerenciamento empresarial.
 
-## ⚠️ Atenção
-##### Lembre-se o projeto Back-end deve estar sendo executado antes mesmo do Front-end, pois o projeto Front-end irá consumir a API do projeto Back-end, saiba mais como executar o projeto Back-end:
+---
 
+## 📸 Demonstração
+<div align="center"> <a href="https://youtu.be/STvXMADzn6M" target="_blank"> <img src="https://img.youtube.com/vi/STvXMADzn6M/0.jpg" width="500" alt="Vídeo demonstração ERP" /> </a> </div>
 
-[![GitHub Badge](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=for-the-badge)](https://github.com/JGabriel02/ERP_BACKEND_DJANGO-main)
+---
 
-## ⛏️ Instalação
+## ✨ Funcionalidades
 
-Instale as dependências do projeto Front-end com o comando Npm
+- Autenticação com JWT
 
-```bash
-  npm install
-```
-Agora execute o projeto com o comando Npm
-    
-```bash
-  npm run start
-```
+- Gestão de usuários e permissões
 
+- Listagem e cadastro de clientes
 
+- Controle de produtos e categorias
 
-## 💎 Stacks utilizadas
+- Navegação protegida por autenticação
 
-**Front-end:** ReactJS, TypeScript, React-Router, Redux, Material UI, Axios
+- Integração total com API Django REST
+---
 
-**Back-end:** Django, Django Rest Framework, Simple JWT
+## 💎 Stacks Utilizadas
+
+- ReactJS
+
+- TypeScript
+
+- React Router DOM
+
+- Redux Toolkit
+
+- Material UI
+
+- Axios
