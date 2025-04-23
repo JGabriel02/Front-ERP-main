@@ -4,7 +4,7 @@ Este é o frontend de um sistema ERP desenvolvido com ReactJS + TypeScript, que 
 
 ---
 
-## 📸 Demonstração
+## 📸 Video de Demonstração (clique na imagem!)
 <div align="center"> <a href="https://youtu.be/STvXMADzn6M" target="_blank"> <img src="https://img.youtube.com/vi/STvXMADzn6M/0.jpg" width="500" alt="Vídeo demonstração ERP" /> </a> </div>
 
 ---
